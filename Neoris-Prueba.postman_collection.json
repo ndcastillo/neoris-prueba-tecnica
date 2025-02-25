@@ -1,0 +1,587 @@
+{
+	"info": {
+		"_postman_id": "1459b660-673c-4a2e-b489-72347fd3fab6",
+		"name": "Neoris-Prueba",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21201977"
+	},
+	"item": [
+		{
+			"name": "Clientes",
+			"item": [
+				{
+					"name": "Creación de Usuarios",
+					"item": [
+						{
+							"name": "postClient Jose Lema",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"nombre\":\"Jose Lema\",\n    \"direccion\":\"Otavalo sn y principal\",\n    \"telefono\":\"098254785\",\n    \"contrasena\":\"1234\",\n    \"estado\": true,\n\n    \"edad\":24,\n    \"genero\":\"masculino\",\n    \"identificacion\":\"123456\",\n    \"id\":3\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/api/v1/clientes",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"clientes"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "postClient Juan Osorio",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"nombre\":\"Juan Osorio\",\n    \"direccion\":\"13 junio y Equinoccial\",\n    \"telefono\":\"098874587\",\n    \"contrasena\":\"1245\",\n    \"estado\": true,\n\n    \"edad\":25,\n    \"genero\":\"masculino\",\n    \"identificacion\":\"123457\",\n    \"id\":3\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/api/v1/clientes",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"clientes"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "postClient Marianela Montalvo",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"nombre\":\"Marianela Montalvo\",\n    \"direccion\":\"Amazonas y NNUU\",\n    \"telefono\":\"097548965\",\n    \"contrasena\":\"5678\",\n    \"estado\": true,\n\n    \"edad\":21,\n    \"genero\":\"femenino\",\n    \"identificacion\":\"123459\",\n    \"id\":3\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/api/v1/clientes",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"clientes"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "postClient",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nombre\":\"Juan Osorio\",\n    \"direccion\":\"13 junio y Equinoccial\",\n    \"telefono\":\"098874587\",\n    \"contrasena\":\"1245\",\n    \"estado\": true,\n\n    \"edad\":24,\n    \"genero\":\"masculino\",\n    \"identificacion\":\"123457\",\n    \"id\":3\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/clientes",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"clientes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getClients",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/v1/clientes",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"clientes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getClientById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/v1/clientes/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"clientes",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Cuentas",
+			"item": [
+				{
+					"name": "Creación de Cuentas",
+					"item": [
+						{
+							"name": "postCuenta 478758",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"numeroCuenta\":\"478758\",\n    \"tipoCuenta\":\"Ahorros\",\n    \"saldo\":2000,\n    \"estado\":true\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8081/api/v1/cuentas/8",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"api",
+										"v1",
+										"cuentas",
+										"8"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "postCuenta 225487",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"numeroCuenta\":\"225487\",\n    \"tipoCuenta\":\"Corriente\",\n    \"saldo\":100,\n    \"estado\":true\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8081/api/v1/cuentas/10",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"api",
+										"v1",
+										"cuentas",
+										"10"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "postCuenta 495878",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"numeroCuenta\":\"495878\",\n    \"tipoCuenta\":\"Ahorros\",\n    \"saldo\":0,\n    \"estado\":true\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8081/api/v1/cuentas/9",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"api",
+										"v1",
+										"cuentas",
+										"9"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "postCuenta 496825",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"numeroCuenta\":\"496825\",\n    \"tipoCuenta\":\"Ahorros\",\n    \"saldo\":540,\n    \"estado\":true\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8081/api/v1/cuentas/10",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"api",
+										"v1",
+										"cuentas",
+										"10"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "postCuenta 585545",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"numeroCuenta\":\"4585545\",\n    \"tipoCuenta\":\"Ahorros\",\n    \"saldo\":1000,\n    \"estado\":true\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8081/api/v1/cuentas/8",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"api",
+										"v1",
+										"cuentas",
+										"8"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "getCuentas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/api/v1/cuentas/clientes?clienteId=2",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"v1",
+								"cuentas",
+								"clientes"
+							],
+							"query": [
+								{
+									"key": "clienteId",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "postCuenta",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"numeroCuenta\":\"585545\",\n    \"tipoCuenta\":\"Corriente\",\n    \"saldo\":1000,\n    \"estado\":true\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8081/api/v1/cuentas/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"v1",
+								"cuentas",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Movimientos",
+			"item": [
+				{
+					"name": "Transacciones",
+					"item": [
+						{
+							"name": "postMovimiento Retiro 575",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"valor\":-575,\n    \"fecha\":\"2025-02-25\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8081/api/v1/movimientos/478758",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"api",
+										"v1",
+										"movimientos",
+										"478758"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "postMovimiento Retiro 600",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"valor\": 600,\n    \"fecha\":\"2025-02-25\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8081/api/v1/movimientos/225487",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"api",
+										"v1",
+										"movimientos",
+										"225487"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "postMovimiento Retiro 150",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"valor\": 150,\n    \"fecha\":\"2025-02-25\"\n    \n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8081/api/v1/movimientos/495878",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"api",
+										"v1",
+										"movimientos",
+										"495878"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "postMovimiento Retiro 540",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"valor\": 540,\n    \"fecha\":\"2025-02-25\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8081/api/v1/movimientos/496825",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"api",
+										"v1",
+										"movimientos",
+										"496825"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "getMovimientos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/api/v1/movimientos",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"v1",
+								"movimientos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "postMovimiento",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"valor\":-575\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8081/api/v1/movimientos/478758",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"v1",
+								"movimientos",
+								"478758"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Lista de Movimientos",
+			"item": [
+				{
+					"name": "getListaMovimientos",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
